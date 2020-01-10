@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		450D2F2A23C62DCC003FA29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D2F2923C62DCC003FA29E /* AppDelegate.swift */; };
 		450D2F2C23C62DCC003FA29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D2F2B23C62DCC003FA29E /* SceneDelegate.swift */; };
-		450D2F2E23C62DCC003FA29E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D2F2D23C62DCC003FA29E /* ContentView.swift */; };
+		450D2F2E23C62DCC003FA29E /* CalculatorButtonsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D2F2D23C62DCC003FA29E /* CalculatorButtonsRow.swift */; };
 		450D2F3023C62DCF003FA29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450D2F2F23C62DCF003FA29E /* Assets.xcassets */; };
 		450D2F3323C62DCF003FA29E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450D2F3223C62DCF003FA29E /* Preview Assets.xcassets */; };
 		450D2F3623C62DCF003FA29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450D2F3423C62DCF003FA29E /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		450D2F2623C62DCC003FA29E /* CalculatorSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		450D2F2923C62DCC003FA29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		450D2F2B23C62DCC003FA29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		450D2F2D23C62DCC003FA29E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		450D2F2D23C62DCC003FA29E /* CalculatorButtonsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonsRow.swift; sourceTree = "<group>"; };
 		450D2F2F23C62DCF003FA29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450D2F3223C62DCF003FA29E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		450D2F3523C62DCF003FA29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,12 +56,8 @@
 		450D2F2823C62DCC003FA29E /* CalculatorSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				450D2F2923C62DCC003FA29E /* AppDelegate.swift */,
-				450D2F2B23C62DCC003FA29E /* SceneDelegate.swift */,
-				450D2F2D23C62DCC003FA29E /* ContentView.swift */,
-				450D2F2F23C62DCF003FA29E /* Assets.xcassets */,
-				450D2F3423C62DCF003FA29E /* LaunchScreen.storyboard */,
-				450D2F3723C62DCF003FA29E /* Info.plist */,
+				450D2F2D23C62DCC003FA29E /* CalculatorButtonsRow.swift */,
+				453B695323C72A080000DD6A /* Supporting Files */,
 				450D2F3123C62DCF003FA29E /* Preview Content */,
 			);
 			path = CalculatorSwiftUI;
@@ -73,6 +69,18 @@
 				450D2F3223C62DCF003FA29E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		453B695323C72A080000DD6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				450D2F2923C62DCC003FA29E /* AppDelegate.swift */,
+				450D2F2B23C62DCC003FA29E /* SceneDelegate.swift */,
+				450D2F2F23C62DCF003FA29E /* Assets.xcassets */,
+				450D2F3423C62DCF003FA29E /* LaunchScreen.storyboard */,
+				450D2F3723C62DCF003FA29E /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +156,7 @@
 			files = (
 				450D2F2A23C62DCC003FA29E /* AppDelegate.swift in Sources */,
 				450D2F2C23C62DCC003FA29E /* SceneDelegate.swift in Sources */,
-				450D2F2E23C62DCC003FA29E /* ContentView.swift in Sources */,
+				450D2F2E23C62DCC003FA29E /* CalculatorButtonsRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +296,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CalculatorSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CalculatorSwiftUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorSwiftUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CalculatorSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CalculatorSwiftUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorSwiftUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
